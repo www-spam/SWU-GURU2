@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Main_Bottom</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_home"> 홈 </string>
+    <string name="action_recipe"> 레시피 리뷰 </string>
+    <string name="action_timer"> 타이머 </string>
+    <string name="action_setting"> 설정 </string>
+</resources>

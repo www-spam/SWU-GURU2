@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modifyActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/modify_backbtn"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backbtn"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="회원 정보 수정"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:fontFamily="@font/ubuntu"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/modify_PW"
+        android:layout_width="274dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/inputrectangle"
+        android:hint="비밀번호"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/modify_PW_C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modify_ID" />
+
+    <EditText
+        android:id="@+id/modify_PW_C"
+        android:layout_width="274dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/inputrectangle"
+        android:hint="비밀번호 확인"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modify_PW" />
+
+    <EditText
+        android:id="@+id/modify_Name"
+        android:layout_width="274dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/inputrectangle"
+        android:hint="이름"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/modify_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <EditText
+        android:id="@+id/modify_ID"
+        android:layout_width="274dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/inputrectangle"
+        android:hint="아이디"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/modify_PW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modify_Name" />
+
+    <TextView
+        android:id="@+id/modify_txt"
+        android:layout_width="177dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="82dp"
+        android:fontFamily="@font/hygothicextra"
+        android:gravity="center_vertical"
+        android:text="정보수정"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/modify_Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/modify_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="75dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modify_PW_C"
+        app:srcCompat="@drawable/longbtn"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/modify_entxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="Done"
+        app:layout_constraintBottom_toTopOf="@+id/modify_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modify_btn"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
